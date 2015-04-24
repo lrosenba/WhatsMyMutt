@@ -1,6 +1,9 @@
 # Built application files
 *.apk
 *.ap_
+/Hello1/platforms/android
+/Hello1/ATLAS3.10.x
+/org.apache.cordova.*
 
 # Files for the Dalvik VM
 *.dex
