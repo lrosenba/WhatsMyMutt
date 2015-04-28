@@ -17,12 +17,12 @@ Right now this app uses a server on my computer so it cannot be run far away fro
 
 1. cd into the app
 2. Install these necessary plugins:
-   * cordova plugin install com.ionic.keyboard 1.0.4 "Keyboard"
-                        - org.apache.cordova.camera 0.3.6 "Camera"
-                        - org.apache.cordova.console 0.2.13 "Console"
-                        - org.apache.cordova.device 0.3.0 "Device"
-                        - org.apache.cordova.file 1.3.3 "File"
-                        - org.apache.cordova.file-transfer 0.5.0 "File Transfer"
+   * cordova plugin install com.ionic.keyboard 1.0.4 "Keyboard" <br />
+                        - org.apache.cordova.camera 0.3.6 "Camera" <br />
+                        - org.apache.cordova.console 0.2.13 "Console" <br />
+                        - org.apache.cordova.device 0.3.0 "Device" <br />
+                        - org.apache.cordova.file 1.3.3 "File" <br />
+                        - org.apache.cordova.file-transfer 0.5.0 "File Transfer" <br />
 3. Run ionic build android
 4. Send to Android phone by bluetooth or other means
 5. Click on app
