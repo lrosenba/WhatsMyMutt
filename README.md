@@ -1,5 +1,5 @@
 # WhatsMyMutt
-# Installation instructions
+## Installation instructions
 1. Download and install Android SDK from [developer.android.com/sdk](http://developer.android.com/sdk/index.html)
 2. Follow installation instructions for installing Android Studio and get the latest Android tools and API.
 3. Add the sdk tools to PATH in the ~/.bash_profile file
@@ -12,7 +12,7 @@
 7. Add ANT_HOME to the PATH
    export PATH=$PATH:$ANT_HOME/bin
 
-# How To Run
+## How To Run
 Right now this app uses a server on my computer so it cannot be run far away from my laptop
 
 1. cd into the app
