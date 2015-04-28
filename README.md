@@ -1,6 +1,6 @@
 # WhatsMyMutt
 # Installation instructions
-1. Download and install Android SDK from [developer.android.com/sdk](developer.android.com/sdk)
+1. Download and install Android SDK from [developer.android.com/sdk](http://developer.android.com/sdk/index.html)
 2. Follow installation instructions for installing Android Studio and get the latest Android tools and API.
 3. Add the sdk tools to PATH in the ~/.bash_profile file
    example: export PATH=${PATH}:/Development/adt-bundle/sdk/platform-tools:/Development/adt-bundle/sdk/tools
