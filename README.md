@@ -13,10 +13,10 @@
    export PATH=$PATH:$ANT_HOME/bin
 
 # How To Run
-Right now this app uses a server on my computer so it cannot be run far away from my laptop
+* Right now this app uses a server on my computer so it cannot be run far away from my laptop
 1. cd into the app
 2. Install these necessary plugins:
-   cordova plugin install com.ionic.keyboard 1.0.4 "Keyboard"
+   * cordova plugin install com.ionic.keyboard 1.0.4 "Keyboard"
             .             org.apache.cordova.camera 0.3.6 "Camera"
             .             org.apache.cordova.console 0.2.13 "Console"
             .             org.apache.cordova.device 0.3.0 "Device"
