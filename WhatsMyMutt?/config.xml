@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.hello1701505" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Hello1</name>
+  <name>WhatsMyMutt?</name>
+  <platform name="android">
+    <icon src="www/img/dog-small-pet-silhouette.jpg" density="ldpi" />
+    <icon src="www/img/dog-small-pet-silhouette.jpg" density="mdpi" />
+    <icon src="www/img/dog-small-pet-silhouette.jpg" density="hdpi" />
+    <icon src="www/img/dog-small-pet-silhouette.jpg" density="xhdpi" />
+  </platform>
   <description>
         An Ionic Framework and Cordova project.
     </description>

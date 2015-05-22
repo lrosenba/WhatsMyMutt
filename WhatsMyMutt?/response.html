@@ -1,0 +1,72 @@
+<!--This code presents the data for the All my Results tab. --> 
+   
+    <!-- Script to instantly classify an image once it is uploaded. -->
+    <script type="text/javascript">
+      $(document).ready(
+        function(){
+          $('#classifyfile').attr('disabled',true);
+          $('#imagefile').change(
+            function(){
+              if ($(this).val()){
+                $('#formupload').submit();
+              }
+            }
+          );
+        }
+      );
+    </script>
+
+    <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height:1.5em;
+      color: #232323;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: Times, serif;
+      line-height:1.5em;
+      border-bottom: 1px solid #ccc;
+    }
+    </style>
+    <!-- Begin page content -->
+    <div class="container">
+      
+      {% if has_result %}
+      {% if not result[0] %}
+      <!-- we have error in the result. -->
+      <div class="alert alert-danger">{{ result[1] }} Did you provide a valid URL or a valid image file? </div>
+      {% else %}
+      <div class="media">
+        <div class="media-body">
+          <div>
+            <div id="myTabContent">
+              <div id="dogs">
+                  {% for single_pred in result[1] %}
+                  <div id="{{ loop.index }}" class="row">
+                    <div class="col">
+                      <h4 class="list-group-item-heading">
+                        <a href="https://www.google.com/#q={{ single_pred[0] }}" target="_blank">{{ single_pred[0] }}</a>
+                      </h4>
+                    </div>
+                    <div class="col">   
+                     <h4 class="list-group-item-heading">
+                       <span>{{ single_pred[1] }}</span>
+                     </h4> 
+                    </div>
+                  </div>
+                  {% endfor %}
+             </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      {% endif %}
+      <hr>
+      {% endif %}
+
+    </div>
+
+    <hr>
