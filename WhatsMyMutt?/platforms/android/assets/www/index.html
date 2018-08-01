@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script src="phonegap-1.3.0.js"></script>
+
+    <script src="js/app.js"></script>
+    
+  </head>
+  <body ng-app="starter" class="platform-android platform-cordova platform-webview">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">What's My Mutt?</h1>
+      </ion-header-bar>
+      <ion-content class="padding">
+              <div class="card">
+                <div class="item item-text-wrap" style="display:inline">
+                   <img id="image" width="160" height="160" src="img/funny-dogs-mixed-breeds-65.jpg" />
+                   <!--<img id="image" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Akita_inu.jpeg/150px-Akita_inu.jpeg" /> -->
+                </div>
+              </div>
+              <div class="list card">
+                <div id = "buttonBar" class = "item item-divider" style="display: none;">
+                   <div class="button-bar">
+                       <a id="dogsonly" class="button button-positive" onclick="document.getElementById('allres').className='button';document.getElementById('dogsonly').className='button button-positive';analyzePicture('myclassify_dog_upload');false;">Dogs Only</a>
+                       <a id="allres" class="button" onclick="document.getElementById('allres').className='button button-positive';document.getElementById('dogsonly').className='button';analyzePicture('myclassify_upload');false;">All my Results</a>
+                   </div>
+                </div>
+
+                <div id = "response" class="item item-text-wrap">
+                   1. Tap the Camera to take a picture or tap the folder to select an existing picture.<br/>
+                   2. Tap the paw print to analyze your picture.<br />
+                   3. See Your Results!
+                </div>
+              </div>
+        <!--<div id="htmlResponse" >
+        </div>-->
+      </ion-content>
+      <div class="bar bar-footer bar-dark" >
+          <div class="buttons">
+              <button class="button button-stable icon ion-android-camera" onClick="takePicture();" style="margin-right:100px;"></button>
+              <button class="button button-stable icon ion-android-folder-open" onClick="selectPicture();" style="margin-right:100px;"></button>
+              <button class="button button-stable icon ion-ios-paw" onClick="document.getElementById('allres').className='button';document.getElementById('dogsonly').className='button button-positive';analyzePicture('myclassify_dog_upload');"></button>
+          </div>
+      </div>
+    </ion-pane>
+  </body>
+</html>
